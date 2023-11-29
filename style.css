@@ -2,13 +2,15 @@
   margin: 0em;
   user-select: none;
   font-family: 'Lato', sans-serif;
-  color: white;
+
 }
 
+/*---- GOOGLE ICON  ----*/
 .material-symbols-outlined {
   color: lightgray;
 }
 
+/*---- NAVBAR / NAV MENU  ----*/
 nav {
   background-color: black;
   padding: 1em 3.125em;
@@ -26,7 +28,7 @@ nav {
 
 .logo_txt {
   color: white;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 1.5rem;
 }
 
@@ -37,4 +39,53 @@ nav {
   background-color: grey;
   padding: 10px 20px;
   border-radius: 10px;
+}
+
+.search_input {
+  border: none;
+  background-color: transparent;
+}
+
+.search_input::placeholder {
+  color: lightgray;
+}
+
+.limited_offer {
+  color: white;
+  font-size: 1.25rem;
+  border-bottom: 1px solid green;
+  cursor: pointer;
+}
+
+.limited_offer:hover {
+  border-bottom: 1px solid greenyellow;
+}
+
+.nav_bottom {
+  margin-top: .75em;
+  margin-bottom: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4em;
+  font-size: .75rem
+}
+
+.menu_item {
+  font-weight: 400;
+  color: lightgray;
+}
+
+.menu_item:hover {
+  cursor: pointer;
+  color: gray;
+}
+
+.slider {
+  background: url("https://images.unsplash.com/photo-1604147495798-57beb5d6af73?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80");
+  clip-path: polygon(0 0, 100% 1%, 100% 100%, 0 85%);
+}
+
+.slider_img {
+  transform: rotate(25deg);
 }
