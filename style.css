@@ -1,4 +1,40 @@
 * {
   margin: 0em;
   user-select: none;
+  font-family: 'Lato', sans-serif;
+  color: white;
+}
+
+.material-symbols-outlined {
+  color: lightgray;
+}
+
+nav {
+  background-color: black;
+  padding: 1em 3.125em;
+}
+
+.nav_top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 80px;
+}
+
+.logo_txt {
+  color: white;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: grey;
+  padding: 10px 20px;
+  border-radius: 10px;
 }
