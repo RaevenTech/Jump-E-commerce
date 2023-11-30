@@ -203,3 +203,26 @@ nav {
 .slider_item:nth-child(5) .slider_price {
   color: yellowgreen;
 }
+
+/* ------------  features ----------------- */
+
+.features {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3.125em;
+  gap: 1em;
+}
+
+.feature {
+  display: flex;
+  flex-direction: column;
+}
+
+.material-symbols-outlined {
+  color: green;
+}
+
+.feature_title {
+  font-weight: 900;
+}
