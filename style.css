@@ -11,6 +11,7 @@
 }
 
 /*---- NAVBAR / NAV MENU  ----*/
+
 nav {
   background-color: black;
   padding: 1em 3.125em;
@@ -81,13 +82,122 @@ nav {
   color: gray;
 }
 
+/*---- Slider  ----*/
+
 .slider {
+  margin-top: -.35em;
   background: url("https://images.unsplash.com/photo-1604147495798-57beb5d6af73?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80");
-  clip-path: polygon(0 0, 100% 1%, 100% 100%, 0 85%);
+  /* clip-path: polygon(0 0, 100% 1%, 100% 100%, 0 90%); */
+}
+
+.slider_wrapper {
+  display: flex;
+  width: 500vw;
 }
 
 .slider_img {
-  transform: rotate(25deg);
+  transform: rotate(35deg);
+  padding-bottom: 4em;
+  z-index: 1;
 }
 
-.slider_wrapper {}
+.slider_bg {
+  width: 650px;
+  height: 650px;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 40%;
+}
+
+.slider_item {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.slider_title {
+  position: absolute;
+  top: 20%;
+  right: 10%;
+  color: white;
+  font-size: 3rem;
+  font-weight: 900;
+  text-align: center;
+  z-index: 1;
+}
+
+.slider_price {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  color: white;
+  font-size: 3rem;
+  font-weight: 300;
+  text-align: center;
+  border: 1px solid grey;
+  padding: .1em;
+  z-index: 1;
+}
+
+.buy_btn {
+  position: absolute;
+  bottom: 20%;
+  right: 15%;
+  color: black;
+  font-size: 1.5rem;
+  font-weight: 800;
+  text-align: center;
+  border: none;
+  padding: .1em;
+  z-index: 1;
+  padding: .15em .5em;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.buy_btn:hover {
+  background-color: black;
+  color: white;
+}
+
+.slider_item:nth-child(1) .slider_bg {
+  background-color: #369e62;
+}
+
+.slider_item:nth-child(2) .slider_bg {
+  background-color: rebeccapurple;
+}
+
+.slider_item:nth-child(3) .slider_bg {
+  background-color: teal;
+}
+
+.slider_item:nth-child(4) .slider_bg {
+  background-color: cornflowerblue;
+}
+
+.slider_item:nth-child(5) .slider_bg {
+  background-color: yellowgreen;
+}
+
+.slider_item:nth-child(1) .slider_price {
+  color: #369e62;
+}
+
+.slider_item:nth-child(2) .slider_price {
+  color: rebeccapurple;
+}
+
+.slider_item:nth-child(3) .slider_price {
+  color: teal;
+}
+
+.slider_item:nth-child(4) .slider_price {
+  color: cornflowerblue;
+}
+
+.slider_item:nth-child(5) .slider_price {
+  color: yellowgreen;
+}
