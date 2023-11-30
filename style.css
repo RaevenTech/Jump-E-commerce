@@ -87,12 +87,14 @@ nav {
 .slider {
   margin-top: -.35em;
   background: url("https://images.unsplash.com/photo-1604147495798-57beb5d6af73?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80");
-  /* clip-path: polygon(0 0, 100% 1%, 100% 100%, 0 90%); */
+  clip-path: polygon(0 0, 100% 1%, 100% 100%, 0 90%);
+  overflow: hidden;
 }
 
 .slider_wrapper {
   display: flex;
   width: 500vw;
+  transition: all 1000ms ease-in-out;
 }
 
 .slider_img {
@@ -102,8 +104,8 @@ nav {
 }
 
 .slider_bg {
-  width: 650px;
-  height: 650px;
+  width: 60%;
+  height: 120%;
   border-radius: 50%;
   position: absolute;
   opacity: 40%;
@@ -154,12 +156,12 @@ nav {
   z-index: 1;
   padding: .15em .5em;
   border-radius: 5px;
-  cursor: pointer;
 }
 
 .buy_btn:hover {
   background-color: black;
   color: white;
+  cursor: pointer;
 }
 
 .slider_item:nth-child(1) .slider_bg {
@@ -187,7 +189,7 @@ nav {
 }
 
 .slider_item:nth-child(2) .slider_price {
-  color: rebeccapurple;
+  color: rgb(140, 73, 207);
 }
 
 .slider_item:nth-child(3) .slider_price {
