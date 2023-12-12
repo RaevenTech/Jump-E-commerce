@@ -83,6 +83,7 @@ const products = [
 
 menuItem.forEach((item, i) => {
   item.addEventListener("click", () => {
+    //changes the slides in the slide show
     sliderWrapper.style.transform = `translateX(${-100 * i}vw)`
   })
 })
