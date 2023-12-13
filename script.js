@@ -10,11 +10,11 @@ const products = [
     colors: [
       {
         code: "black",
-        img: "./image/air-force-blk.png",
+        img: "./images/air-force-blk.png",
       },
       {
         code: "darkblue",
-        img: "./image/air-force-blk.png",
+        img: "./images/air-force-blk.png",
       },
     ],
   },
@@ -25,11 +25,11 @@ const products = [
     colors: [
       {
         code: "lightgray",
-        img: "./image/airjordan.png",
+        img: "./images/airjordan.png",
       },
       {
         code: "green",
-        img: "./image/airjordan.png",
+        img: "./images/airjordan.png",
       },
     ],
   },
@@ -40,11 +40,11 @@ const products = [
     colors: [
       {
         code: "lightgray",
-        img: "./image/blazer.png",
+        img: "./images/blazer.png",
       },
       {
         code: "green",
-        img: "./image/blazer.png",
+        img: "./images/blazer.png",
       },
     ],
   },
@@ -55,11 +55,11 @@ const products = [
     colors: [
       {
         code: "black",
-        img: "./image/crater.png",
+        img: "./images/crater.png",
       },
       {
         code: "lightgray",
-        img: "./image/crater.png",
+        img: "./images/crater.png",
       },
     ],
   },
@@ -70,21 +70,39 @@ const products = [
     colors: [
       {
         code: "gray",
-        img: "./image/hippie2.png",
+        img: "./images/hippie2.png",
       },
       {
         code: "green",
-        img: "./image/hippie.png",
+        img: "./images/hippie.png",
       },
     ],
   },
 ];
 
+let chosenProduct = products[0]
+
+const currentProductImage = document.getElementById("product_img")
+const currentProductTitle = document.getElementById("product_title")
+const currentProductPrice = document.getElementById("product_price")
+const currentProductColor = document.querySelectorAll("#color")
+const currentProductSize = document.querySelectorAll("#size")
+console.log(currentProductImage)
 
 menuItem.forEach((item, i) => {
   item.addEventListener("click", () => {
     //changes the slides in the slide show
     sliderWrapper.style.transform = `translateX(${-100 * i}vw)`
+
+    //change the chosen product to display
+    chosenProduct = products[i]
+
+    //change text of curent product
+    currentProductTitle.textContent = chosenProduct.title
+    //change price of chosen product
+    currentProductPrice.textContent = `€${chosenProduct.price}`
+    currentProductImage.src = chosenProduct.colors[0].img
+    
   })
 })
 
