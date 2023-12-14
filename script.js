@@ -24,7 +24,7 @@ const products = [
     price: 149,
     colors: [
       {
-        code: "lightgray",
+        code: "red",
         img: "./images/airjordan.png",
       },
       {
@@ -54,7 +54,7 @@ const products = [
     price: 129,
     colors: [
       {
-        code: "black",
+        code: "sandybrown",
         img: "./images/crater.png",
       },
       {
@@ -85,9 +85,9 @@ let chosenProduct = products[0]
 const currentProductImage = document.getElementById("product_img")
 const currentProductTitle = document.getElementById("product_title")
 const currentProductPrice = document.getElementById("product_price")
-const currentProductColor = document.querySelectorAll("#color")
-const currentProductSize = document.querySelectorAll("#size")
-console.log(currentProductImage)
+const currentProductColors = document.querySelectorAll("#color")
+const currentProductSizes = document.querySelectorAll("#size")
+//console.log(currentProductColors)
 
 menuItem.forEach((item, i) => {
   item.addEventListener("click", () => {
@@ -96,12 +96,17 @@ menuItem.forEach((item, i) => {
 
     //change the chosen product to display
     chosenProduct = products[i]
+    console.log(chosenProduct)
 
     //change text of curent product
     currentProductTitle.textContent = chosenProduct.title
     //change price of chosen product
     currentProductPrice.textContent = `€${chosenProduct.price}`
     currentProductImage.src = chosenProduct.colors[0].img
+    //assign new  product color
+    currentProductColors.forEach((color, i) => {
+      color.style.backgroundColor = chosenProduct.colors[i].code
+    })
     
   })
 })
