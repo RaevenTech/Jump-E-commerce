@@ -2,7 +2,10 @@
   margin: 0em;
   user-select: none;
   font-family: 'Lato', sans-serif;
+}
 
+html {
+  scroll-behavior: smooth;
 }
 
 /*---- GOOGLE ICON  ----*/
@@ -246,7 +249,7 @@ nav {
 }
 
 .product_img {
-  width: 60%;
+  width: 50%;
   margin-top: 4.5em;
   padding-top: 50px;
 }

@@ -116,4 +116,14 @@ currentProductColors.forEach((color, i) =>{
   })
 })
 
+currentProductSizes.forEach((size, i) => {
+  size.addEventListener("click", () => {
+    currentProductSizes.forEach(size => {
+      size.style.backgroundColor = "transparent"
+      size.style.color = "black"
+    })
+    size.style.backgroundColor = "black"
+    size.style.color = "white"
+  })
+})
 
