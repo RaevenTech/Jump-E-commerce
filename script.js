@@ -10,11 +10,11 @@ const products = [
     colors: [
       {
         code: "black",
-        img: "./images/air-force-blk.png",
+        img: "./images/AirForcebg.png",
       },
       {
         code: "darkblue",
-        img: "./images/air-force-blk.png",
+        img: "./images/AirForce2bg.png",
       },
     ],
   },
@@ -24,12 +24,12 @@ const products = [
     price: 149,
     colors: [
       {
-        code: "red",
-        img: "./images/airjordan.png",
+        code: "black",
+        img: "./images/Jordanbg.png",
       },
       {
         code: "green",
-        img: "./images/airjordan.png",
+        img: "./images/Jordan2bg.png",
       },
     ],
   },
@@ -39,12 +39,12 @@ const products = [
     price: 109,
     colors: [
       {
-        code: "lightgray",
-        img: "./images/blazer.png",
+        code: "white",
+        img: "./images/Blazerbg.png",
       },
       {
         code: "green",
-        img: "./images/blazer.png",
+        img: "./images/Blazer2bg.png",
       },
     ],
   },
@@ -54,12 +54,12 @@ const products = [
     price: 129,
     colors: [
       {
-        code: "sandybrown",
-        img: "./images/crater.png",
+        code: "black",
+        img: "./images/Craterbg.png",
       },
       {
-        code: "lightgray",
-        img: "./images/crater.png",
+        code: "whitesmoke",
+        img: "./images/Crater2bg.png",
       },
     ],
   },
@@ -70,11 +70,11 @@ const products = [
     colors: [
       {
         code: "gray",
-        img: "./images/hippie2.png",
+        img: "./images/Hippiebg.png",
       },
       {
-        code: "green",
-        img: "./images/hippie.png",
+        code: "slategrey",
+        img: "./images/hippie3.png",
       },
     ],
   },
@@ -96,7 +96,7 @@ menuItem.forEach((item, i) => {
 
     //change the chosen product to display
     chosenProduct = products[i]
-    console.log(chosenProduct)
+    //console.log(chosenProduct)
 
     //change text of curent product
     currentProductTitle.textContent = chosenProduct.title
@@ -107,9 +107,13 @@ menuItem.forEach((item, i) => {
     currentProductColors.forEach((color, i) => {
       color.style.backgroundColor = chosenProduct.colors[i].code
     })
-    
   })
 })
 
+currentProductColors.forEach((color, i) =>{
+  color.addEventListener("click", ()=>{
+    currentProductImage.src = chosenProduct.colors[i].img
+  })
+})
 
 
