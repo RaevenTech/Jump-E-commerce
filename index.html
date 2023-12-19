@@ -128,15 +128,43 @@
       <!----------------------------- Payment Modal  --------------------------------------->
         <section class="modal">
           <div class="payment" id="payment_modal">
-            <h1 class="payment_title">Paymeny Details</h1>
-            <label for="firstName">First Name</label>
-            <input type="text" name="firstName" class="payment_input" placeholder="First Name" required>
-            <label for="lastName">Last Name</label>
-            <input type="text" name="lastName" class="payment_input" placeholder="Last Name" required>
-            <label for="phoneNumber">Mobile</label>
-            <input type="number" name="phoneNumber" class="payment_input" placeholder="+01 234 567 789" required>
-            <label for="email">Email</label>
-            <input type="email" name="email" class="payment_input" placeholder="Valid Email" required>
+            <h1 class="payment_title">Payment Details</h1>
+            <div class="input_container">
+              <label for="firstName">First Name</label>
+              <input type="text" name="firstName" class="payment_input" placeholder="John" required>
+            </div>
+            <div class="input_container">
+              <label for="lastName">Last Name</label>
+              <input type="text" name="lastName" class="payment_input" placeholder="Wick" required>
+            </div>
+            <div class="input_container">
+              <label for="phoneNumber">Mobile</label>
+              <input type="number" name="phoneNumber" class="payment_input" placeholder="+01 234 567 789" required>
+            </div>
+            <div class="input_container">
+              <label for="email">Email</label>
+              <input type="email" name="email" class="payment_input" placeholder="Valid @ Email" required>
+            </div>
+            <div class="card_details input_container">
+              <div class="card_icons_title">
+                <div class="card_info_title">
+                  <h1 class="card_infomation">Card Infomation</1h>
+                </div>
+                <div class="card_logos">
+                  <img src="./images/VisaLogo.png" alt="visa" class="card_icon visa">
+                  <img src="./images/masterCard.png" alt="mastercard" class="card_icon master">
+                </div>
+                </div>
+                <div class="input_container">
+                  <input type="number" class="payment_input card_number" placeholder="Card Number" required>
+                </div>
+                <div class="card_info">
+                  <input type="text" class="payment_input sm" placeholder="mm">/
+                  <input type="text" class="payment_input sm" placeholder="yyyy">
+                  <input type="text" class="payment_input sm" placeholder="cvv">
+                </div>
+                <button class="pay_btn">Check Out</button>
+            </div>
           </div>
         </section>
     </div>
