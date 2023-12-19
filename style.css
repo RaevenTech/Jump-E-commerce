@@ -383,6 +383,10 @@ nav {
   border-bottom: 1px solid white;
 }
 
+input:hover {
+  cursor: pointer;
+}
+
 .payment_input::placeholder {
   color: lightgray;
   font-weight: 500;
