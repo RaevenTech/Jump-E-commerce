@@ -12,6 +12,7 @@
   <title>JumpStreet Shoes</title>
 </head>
 <body>
+  <!----------------------------- Navbar  --------------------------------------->
   <nav>
     <div class="nav_top">
       <div class="nav_item">
@@ -104,7 +105,7 @@
       </div>
     </div>
   </section>
-  <!----------------------------- Product section  --------------------------------------->
+  <!----------------------------- Product section / Payment Modal --------------------------------------->
   <section>
     <div class="product" id="product">
       <img src="./images/AirForcebg.png" alt="Black Nike Air Force" id="product_img" class="product_img">
@@ -124,6 +125,20 @@
         </div>
         <button class="buy_product_btn">BUY NOW</button>
         </div>
+      <!----------------------------- Payment Modal  --------------------------------------->
+        <section class="modal">
+          <div class="payment" id="payment_modal">
+            <h1 class="payment_title">Paymeny Details</h1>
+            <label for="firstName">First Name</label>
+            <input type="text" name="firstName" class="payment_input" placeholder="First Name" required>
+            <label for="lastName">Last Name</label>
+            <input type="text" name="lastName" class="payment_input" placeholder="Last Name" required>
+            <label for="phoneNumber">Mobile</label>
+            <input type="number" name="phoneNumber" class="payment_input" placeholder="+01 234 567 789" required>
+            <label for="email">Email</label>
+            <input type="email" name="email" class="payment_input" placeholder="Valid Email" required>
+          </div>
+        </section>
     </div>
   </section>
   <script src="script.js"></script>

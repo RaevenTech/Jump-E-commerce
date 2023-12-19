@@ -329,3 +329,31 @@ nav {
   background-color: #fff;
   color: sa;
 }
+
+/* ------------  payment modal ----------------- */
+
+.payment {
+  color: white;
+  text-shadow: 1px 1px black;
+  width: 31.25em;
+  height: 31.25em;
+  background-color: grey;
+  opacity: 98%;
+  position: absolute;
+  border-radius: 10px;
+  border: 1px solid grey;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1em;
+  box-shadow: 0px 0px 11px 10px rgba(252, 252, 252, 0.91) inset;
+  -webkit-box-shadow: 0px 0px 11px 10px rgba(255, 255, 255, 0.91) inset;
+  -moz-box-shadow: 0px 0px 11px 10px rgba(253, 253, 253, 0.91) inset;
+}
