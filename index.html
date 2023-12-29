@@ -108,26 +108,29 @@
   <!----------------------------- Product section / Payment Modal --------------------------------------->
   <section>
     <div class="product" id="product">
-      <img src="./images/AirForcebg.png" alt="Black Nike Air Force" id="product_img" class="product_img">
-      <div class="product_details">
-        <h1 class="product_title" id="product_title">AIR FORCE</h1>
-        <h2 class="product_price" id="product_price">€119</h2>
-        <p class="product_description" id="product_description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-          Natus fugit doloribus modi neque rem odio nemo.</p>
-        <div class="colors">
-          <div class="color" id="color"></div>
-          <div class="color" id="color"></div>
+      <div class="product_container">
+        <img src="./images/AirForcebg.png" alt="Black Nike Air Force" id="product_img" class="product_img">
+        <div class="product_details">
+          <h1 class="product_title" id="product_title">AIR FORCE</h1>
+          <h2 class="product_price" id="product_price">€119</h2>
+          <p class="product_description" id="product_description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+            Natus fugit doloribus modi neque rem odio nemo.</p>
+          <div class="colors">
+            <div class="color" id="color"></div>
+            <div class="color" id="color"></div>
+          </div>
+          <div class="sizes">
+            <div class="size" id="size">42</div>
+            <div class="size" id="size">43</div>
+            <div class="size" id="size">44</div>
+          </div>
+          <button class="buy_product_btn" id="buy_product_btn">BUY NOW</button>
         </div>
-        <div class="sizes">
-          <div class="size" id="size">42</div>
-          <div class="size" id="size">43</div>
-          <div class="size" id="size">44</div>
-        </div>
-        <button class="buy_product_btn">BUY NOW</button>
-        </div>
+      </div>
       <!----------------------------- Payment Modal  --------------------------------------->
-        <section class="modal">
-          <div class="payment" id="payment_modal">
+        <section class="modal hidden" id="modal">
+          <div class="payment " id="payment_modal">
+            <span class="close" id="close_btn">X</span>
             <h1 class="payment_title">Payment Details</h1>
             <div class="input_container">
               <label for="firstName">First Name</label>
@@ -167,6 +170,24 @@
             </div>
           </div>
         </section>
+        <!---------- Payment Modal END  ------------>
+    </div>
+  </section>
+  <!------------------------------------- Gallery section  --------------------------------------->
+  <section>
+    <div class="gallery">
+      <div class="gallery_image">
+        <h1 class="gallery_title">Be Yourself!</h1>
+        <img src="./images/nike_greatness.jpg" alt="boy running" class="gallery_img">
+      </div>
+      <div class="gallery_image">
+        <img src="./images/nike-blk_wht.jpg" alt="black and white nike shoes" class="gallery_img">
+        <h1 class="gallery_title">Free Yourself!</h1>
+      </div>
+      <div class="gallery_image">
+        <h1 class="gallery_title">Just Do It!</h1>
+        <img src="./images/jordan-retro-wbl.webp" alt="" class="gallery_img">
+      </div>
     </div>
   </section>
   <script src="script.js"></script>

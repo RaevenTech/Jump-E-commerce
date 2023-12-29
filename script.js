@@ -2,6 +2,7 @@ const sliderWrapper = document.getElementById("slider_wrapper")
 const menuItem = document.querySelectorAll(".menu_item")
 //console.log(menuItem)
 
+
 const products = [
   {
     id: 1,
@@ -80,7 +81,7 @@ const products = [
   },
 ];
 
-let chosenProduct = products[0]
+
 
 const currentProductImage = document.getElementById("product_img")
 const currentProductTitle = document.getElementById("product_title")
@@ -88,6 +89,7 @@ const currentProductPrice = document.getElementById("product_price")
 const currentProductColors = document.querySelectorAll("#color")
 const currentProductSizes = document.querySelectorAll("#size")
 //console.log(currentProductColors)
+let chosenProduct = products[0]
 
 menuItem.forEach((item, i) => {
   item.addEventListener("click", () => {
@@ -110,12 +112,15 @@ menuItem.forEach((item, i) => {
   })
 })
 
+// select color of product to display
 currentProductColors.forEach((color, i) =>{
   color.addEventListener("click", ()=>{
     currentProductImage.src = chosenProduct.colors[i].img
   })
 })
 
+
+// select product size
 currentProductSizes.forEach((size, i) => {
   size.addEventListener("click", () => {
     currentProductSizes.forEach(size => {
@@ -126,4 +131,18 @@ currentProductSizes.forEach((size, i) => {
     size.style.color = "white"
   })
 })
+
+// display/remove payment modal
+const modalEl = document.getElementById("modal")
+const closeBtn = document.getElementById("close_btn")
+const buyNowBtn = document.getElementById("buy_product_btn")
+
+buyNowBtn.addEventListener("click", () =>{
+  modalEl.classList.remove("hidden")
+})
+
+closeBtn.addEventListener("click", () =>{
+  modalEl.classList.add("hidden")
+})
+
 
