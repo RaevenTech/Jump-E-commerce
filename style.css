@@ -458,3 +458,29 @@ input:hover {
   background-color: black;
   cursor: pointer;
 }
+
+/* ------------  Gallery  ----------------- */
+.gallery {
+  padding: 3.125em;
+  display: flex;
+}
+
+.gallery_item {
+  flex: 1;
+}
+
+.gallery_img {
+  width: 100%;
+}
+
+.gallery_title {
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+
+.title_right {
+  color: black;
+  font-size: 3.5rem;
+  letter-spacing: -2px;
+}
