@@ -243,16 +243,17 @@ nav {
 
 
 .product {
-  height: 75vh;
+  height: 100vh;
   background-color: rgb(219, 219, 219);
   position: relative;
   clip-path: polygon(0 15%, 100% 0%, 100% 100%, 0 100%);
 }
 
 .product_img {
-  width: 50%;
+  width: 40%;
   margin-top: 4.5em;
   padding-top: 50px;
+  padding-left: 50px;
 }
 
 .product_details {
@@ -463,6 +464,7 @@ input:hover {
 .gallery {
   padding: 3.125em;
   display: flex;
+  height: 100vh;
 }
 
 .gallery_item {
@@ -470,7 +472,7 @@ input:hover {
 }
 
 .gallery_img {
-  width: 100%;
+  width: 87%;
 }
 
 .gallery_title {
@@ -483,4 +485,57 @@ input:hover {
   color: black;
   font-size: 3.5rem;
   letter-spacing: -2px;
+}
+
+/* ------------  New season  ----------------- */
+#new_season {
+  color: lightgray;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.new_season_container {
+  margin-top: 2em;
+  background-color: #000000;
+  clip-path: polygon(51% 0, 51% 0, 100% 9%, 100% 86%, 51% 93%, 51% 93%, 0 84%, 0 8%);
+}
+
+.new_season {
+  display: flex;
+}
+
+.season_item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+}
+
+.season_image {
+  width: 100%;
+  padding-top: 1.5em;
+}
+
+.season_title {
+  font-size: 2.5rem;
+}
+
+.season_btn {
+  padding: .75em 1.5em;
+  background-color: white;
+  color: black;
+  border: none;
+  font-family: 'Lato', sans-serif;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+
+.season_btn:hover {
+  color: lightgray;
+  cursor: pointer;
+  background-color: gray;
 }
