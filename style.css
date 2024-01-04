@@ -738,6 +738,7 @@ input:hover {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    position: relative;
   }
 
   .product_title {
@@ -750,6 +751,106 @@ input:hover {
 
   /* ------- payment ----------------- */
   /* ------- gallery ----------------- */
+  .gallery {
+    display: none;
+  }
+
+  .gallery_img {
+    width: 100%;
+  }
+
+  .title_left,
+  .title_center {
+    display: none;
+  }
+
+  .title_right {
+    text-align: center;
+  }
+
   /* ------- season ----------------- */
+  #new_season {
+    justify-content: unset;
+    height: unset;
+  }
+
+  .new_season_container {
+    clip-path: none;
+    margin-top: 0;
+  }
+
+  .new_season {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .season_image {
+    padding-top: 0;
+  }
+
+  .season_title {
+    font-size: 1.5rem;
+  }
+
+  .season_title_sm {
+    font-size: 1rem;
+  }
+
+  .season_item:nth-child(2) {
+    padding: 40px;
+  }
+
   /* ------- footer ----------------- */
+  #footer {
+
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer_left {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex: 2;
+    padding: 1em 1.5em;
+    padding-bottom: 0;
+  }
+
+  .footer_menu_title {
+    font-size: 1rem;
+    margin-bottom: .65em;
+  }
+
+  .footer_list {
+    font-size: .75rem;
+  }
+
+  .footer_list_item {
+    margin-bottom: .75em;
+  }
+
+  .footer_right {
+    width: 100%;
+    padding: .5em 1.5em 2em 1.5em;
+  }
+
+  .footer_right_menu_title {
+    font-size: 1rem;
+  }
+
+  .footer_social_icons {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+  }
+
+  .footer_icons {
+    width: 1.562rem;
+    margin-right: 0;
+  }
+
+  .copyright_txt {
+    right: 0%;
+  }
 }
