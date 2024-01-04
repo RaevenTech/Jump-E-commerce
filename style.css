@@ -633,3 +633,39 @@ input:hover {
   bottom: 2.5%;
   right: 5%;
 }
+
+/* -------  @media query responsivness ----------------- */
+
+@media (max-width:480px) {
+
+  /* ------- navbar ----------------- */
+  nav {
+    padding: 1.25em 1.25em .5em 1.25em;
+  }
+
+  .search {
+    display: none;
+  }
+
+  .logo {
+    width: 50px;
+  }
+
+  .logo_txt {
+    font-size: 1rem;
+  }
+
+  .linited_offer {
+    font-size: 1rem;
+  }
+
+  .nav_bottom {
+    flex-wrap: wrap;
+    margin-bottom: .25em;
+    gap: 2em;
+  }
+
+  .menu_item {}
+
+  /* ------- navbar ----------------- */
+}
