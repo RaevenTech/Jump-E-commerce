@@ -1,6 +1,3 @@
-const sliderWrapper = document.getElementById("slider_wrapper")
-const menuItem = document.querySelectorAll(".menu_item")
-//console.log(menuItem)
 
 
 const products = [
@@ -81,6 +78,9 @@ const products = [
   },
 ];
 
+const sliderWrapper = document.getElementById("slider_wrapper")
+const menuItem = document.querySelectorAll(".menu_item")
+//console.log(menuItem)
 
 
 const currentProductImage = document.getElementById("product_img")
@@ -146,3 +146,9 @@ closeBtn.addEventListener("click", () =>{
 })
 
 
+//update copyright every year
+const copyrightYear = document.getElementById("copyright_year")
+const dateSnapshot = new Date()
+const newYear = dateSnapshot.getFullYear().toString()
+copyrightYear.innerText = newYear 
+//console.log(newYear)
